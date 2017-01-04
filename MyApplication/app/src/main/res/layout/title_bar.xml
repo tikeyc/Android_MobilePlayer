@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view.TitleBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#11000000"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/title_bar_left_icon"
+        android:id="@+id/imageView"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:clickable="true"
+        android:drawablePadding="5dp"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@drawable/textview_search_drawable_selector"
+        android:background="@drawable/textview_search_bg_drawable_selector"
+        android:textColor="@drawable/textview_search_textcolor_drawable_selector"
+        android:text="全网搜索"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_search"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_gift"
+        android:layout_marginLeft="8dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+        <!--android:drawableLeft="@drawable/title_bar_right_icon_drawable_selector"-->
+        <TextView
+            android:background="@drawable/title_bar_right_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/textView_game"
+            android:layout_weight="1" />
+
+        <!--小红点-->
+        <ImageView
+            android:layout_alignRight="@+id/textView_game"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/dot"
+            android:id="@+id/imageView2" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@android:drawable/ic_input_add"
+        android:id="@+id/rl_add"
+        android:layout_weight="0.07" />
+
+
+</view.TitleBar>

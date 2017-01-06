@@ -9,12 +9,13 @@
     tools:context="com.tikeyc.mobileplayer.activity.SystemVideoPlayer">
 
 
-    <VideoView
+    <view.VideoView
         android:id="@+id/videoview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <include
+        android:id="@+id/media_controller"
         layout="@layout/media_controller">
     </include>
 </RelativeLayout>

@@ -1,12 +1,15 @@
 package domain;
 
+import java.io.Serializable;
+
 /**
  * Created by public1 on 2017/1/5.
  *
  * 代表一个视频或音频
  */
 
-public class MediaItem {
+//实现Serializable接口 序列化对象，以便用Bundle putSerializable()传递数组对象
+public class MediaItem implements Serializable {
 
     private String name;
     private long duration;
